@@ -2,9 +2,9 @@ require 'pry'
 require 'sinatra'
 require 'pg'
 require 'sinatra/reloader' if development?
-require 'sinatra/activerecord'
+require 'sinatra/activerecord/rake'
 
-class Post << ActiveRecord::Base
+class Post < ActiveRecord::Base
 
 end
 
